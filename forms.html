@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: #1ee61e;
+            font-family: Times New Roman, Times, serif;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border: 2px solid #920c0c;
+            color: #1d0686;
+
+        }
+
+        .form-label {
+            display: block;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            /* To ensure the input fields take up the full width of their container(avoid shooting out from borders) */
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Form inputs text, email, password, phone, date,radio button, checkbox, select -->
+    <form action="">
+        <label class="form-label" for="full_name">First and Last Name:</label>
+        <input class="form-control" type="text" name="full_name" id="full_name" placeholder="Esther Doe" required>
+
+        <label class="form-label" for="email">Email:</label>
+        <input class="form-control" type="email" name="email" id="email" placeholder="esther@example.com" required>
+
+        <label class="form-label" for="password">Password:</label>
+        <input class="form-control" type="password" name="password" id="password" placeholder="*******" required>
+
+        <label class="form-label" for="phone">Phone:</label>
+        <input class="form-control" type="tel" name="phone" id="phone" placeholder="0712345678" required>
+
+        <label class="form-label" for="gender">Gender:</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male:</label>
+
+        <br>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female:</label>
+
+        <br>
+
+        <br>
+
+        <label class="form-label" for="dob">Date of Birth:</label>
+        <input class="form-control" type="date" name="dob" id="dob" required min="1900-01-01" max="2024-12-31">
+
+        <p>Select your favorite sports:</p>
+
+        <input type="checkbox" name="tennis" id="tennis" value="Tennis">
+        <label for="tennis">Tennis</label>
+
+        <input type="checkbox" name="football" id="football" value="Football">
+        <label for="football">Football</label>
+
+        <br>
+
+        <input type="checkbox" name="basketball" id="basketball" value="Basketball">
+        <label for="basketball">Basketball</label>
+
+        <label for="county">County:</label>
+        <select name="county" id="county">
+            <option value="nairobi">Nairobi</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="nakuru">Nakuru</option>
+        </select>
+
+        <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>
