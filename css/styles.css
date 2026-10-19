@@ -1,0 +1,47 @@
+body {
+    background-color: #3ee00c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.col {
+    width: 24%;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(26, 22, 22);
+}
+
+p {
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .col {
+        width: 50%;
+    }
+
+    p {
+        color: rgb(8, 36, 192);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .col {
+        width: 50%;
+    }
+
+    p {
+        color: rgb(192, 8, 8);
+    }
+}
